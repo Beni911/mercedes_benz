@@ -7,6 +7,7 @@
     <title>Mercedes-Benz | A vezetés új élménye</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/Mercedes-Benz-Logo-Background-PNG.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
@@ -46,31 +47,46 @@
                 <p> Minden Mercedes-Benz egyedi karakterrel rendelkezik. Válaszd ki azt, amelyik hozzád a legközelebb
                     áll. </p>
             </header>
-            <div>
-                <article>
-                    <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1200&q=80"
-                        alt="Mercedes-Benz limuzin">
-                    <p>Limuzin</p>
-                    <h3>S-osztály</h3>
-                    <p> Luxus, elegancia és kompromisszumok nélküli kényelem. </p>
-                    <a href="#">Felfedezem →</a>
-                </article>
-                <article>
-                    <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1200&q=80"
-                        alt="Mercedes-AMG sportautó">
-                    <p>Teljesítmény</p>
-                    <h3>Mercedes-AMG GT</h3>
-                    <p> Szenvedélyes teljesítmény egy lenyűgöző formában. </p>
-                    <a href="#">Felfedezem →</a>
-                </article>
-                <article>
-                    <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1200&q=80"
-                        alt="Mercedes-Benz SUV">
-                    <p>Sport SUV</p>
-                    <h3>GLE</h3>
-                    <p> Sokoldalúság, erő és prémium kényelem minden úton. </p>
-                    <a href="#">Felfedezem →</a>
-                </article>
+            <div class="container">
+
+                <div class="row">
+                    
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <img src="images/S-class.avif" class="card-img-top" alt="Mercedes_S-osztaly">
+                            <div class="card-body">
+                                <p>Limuzin</p>
+                                <h3 class="card-title">S-osztály</h3>
+                                <p class="card-text">Luxus, elegancia és kompromisszumok nélküli kényelem.</p>
+                                <a href="#" class="btn btn-primary">Felfedezem →</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <img src="images/AMG_GT.webp" class="card-img-top" alt="Mercedes_AMG GT">
+                            <div class="card-body">
+                                <p>Teljesítmény</p>
+                                <h3 class="card-title">Mercedes-AMG GT</h3>
+                                <p class="card-text">Szenvedélyes teljesítmény egy lenyűgöző formában.</p>
+                                <a href="#" class="btn btn-primary">Felfedezem →</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <img src="images/GLE.jpg" class="card-img-top" alt="Mercedes_GLE">
+                            <div class="card-body">
+                                <p>Sport SUV</p>
+                                <h3 class="card-title">GLE</h3>
+                                <p class="card-text">Sokoldalúság, erő és prémium kényelem minden úton.</p>
+                                <a href="#" class="btn btn-primary">Felfedezem →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="kapcsolat">
