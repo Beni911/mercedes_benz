@@ -11,7 +11,6 @@
 </head>
 
 <body id="s_class">
-
     <header class="top">
         <nav>
             <a class="link_semmi" href="index.html">
@@ -27,13 +26,15 @@
                 <span></span>
             </label>
             <ul class="navbar">
-                <li><a href="#modellek">Konfigurátor</a></li>
-                <li><a href="#tortenet">Szolgáltatások</a></li>
-                <li><a href="#technologia">Összehasonlítás</a></li>
-                <li><a href="#kapcsolat">Galéria</a></li>
+                <li><a href="#konfigurator">Konfigurátor</a></li>
+                <li><a href="#szolgaltatasok">Szolgáltatások</a></li>
+                <li><a href="#osszehasonlitas">Összehasonlítás</a></li>
+                <li><a href="#galeria">Galéria</a></li>
             </ul>
         </nav>
-
+        <div class="led-container">
+            <div class="led-light-bar"></div>
+        </div>
         <div class="bevezeto">
             <p class="alcim">A Luxus Zászlóshajója</p>
             <h1> Mercedes-Benz S-Class</h1>
@@ -42,83 +43,50 @@
             <a href="#konfigurator">Konfiguráció & Specifikációk</a>
         </div>
     </header>
-
     <section id="konfigurator" class="section-padding dark-bg">
-
         <input type="radio" name="color" id="color-obsidian" checked class="css-radio">
         <input type="radio" name="color" id="color-graphite" class="css-radio">
         <input type="radio" name="color" id="color-silver" class="css-radio">
         <input type="radio" name="color" id="color-emerald" class="css-radio">
-
         <input type="radio" name="model" id="model-s450" checked class="css-radio">
         <input type="radio" name="model" id="model-s500" class="css-radio">
         <input type="radio" name="model" id="model-s580e" class="css-radio">
         <input type="radio" name="model" id="model-maybach" class="css-radio">
-
         <div class="section-header">
             <span>Interaktív Bemutató</span>
             <h2>Személyre Szabott Exkluzivitás</h2>
             <p>Válassza ki a prémium fényezést és a kivitelt, hogy megtalálja az Ön egyéniségéhez tökéletesen illeszkedő
                 S-Class modellt.</p>
         </div>
-
         <div class="configurator-container">
             <div class="config-preview">
-
                 <div class="preview-img-wrapper">
                     <!-- Obsidian Black -->
-                    <img class="car-img img-obsidian-s450"
-                        src="images/s450d_obsidian_black.png"
+                    <img class="car-img img-obsidian-s450" src="images/s450d_obsidian_black.png"
                         alt="S 450 d Obsidian Black">
-                    <img class="car-img img-obsidian-s500"
-                        src="images/s500_obsidian_black.jpg"
+                    <img class="car-img img-obsidian-s500" src="images/s500_obsidian_black.jpg"
                         alt="S 500 Obsidian Black">
-                    <img class="car-img img-obsidian-s580e"
-                        src="images/s580e_obsidian_black.jpg"
+                    <img class="car-img img-obsidian-s580e" src="images/s580e_obsidian_black.jpg"
                         alt="S 580 e Obsidian Black">
-                    <img class="car-img img-obsidian-maybach"
-                        src="images/maybach_obsidian_black.jpg"
+                    <img class="car-img img-obsidian-maybach" src="images/maybach_obsidian_black.jpg"
                         alt="Maybach Obsidian Black">
-
                     <!-- Graphite Grey -->
-                    <img class="car-img img-graphite-s450"
-                        src="images/s450d_graphite.webp"
-                        alt="S 450 d Graphite Grey">
-                    <img class="car-img img-graphite-s500"
-                        src="images/s500_graphite.webp"
-                        alt="S 500 Graphite Grey">
-                    <img class="car-img img-graphite-s580e"
-                        src="images/s580e_graphite.jpg"
-                        alt="S 580 e Graphite Grey">
-                    <img class="car-img img-graphite-maybach"
-                        src="images/maybach_graphite.webp"
+                    <img class="car-img img-graphite-s450" src="images/s450d_graphite.webp" alt="S 450 d Graphite Grey">
+                    <img class="car-img img-graphite-s500" src="images/s500_graphite.webp" alt="S 500 Graphite Grey">
+                    <img class="car-img img-graphite-s580e" src="images/s580e_graphite.jpg" alt="S 580 e Graphite Grey">
+                    <img class="car-img img-graphite-maybach" src="images/maybach_graphite.webp"
                         alt="Maybach Graphite Grey">
-
                     <!-- High-Tech Silver -->
-                    <img class="car-img img-silver-s450"
-                        src="images/s450d_silver.jpg" alt="S 450 d Silver">
-                    <img class="car-img img-silver-s500"
-                        src="images/s500_silver.jpg" alt="S 500 Silver">
-                    <img class="car-img img-silver-s580e"
-                        src="images/s580e_silver.jpg" alt="S 580 e Silver">
-                    <img class="car-img img-silver-maybach"
-                        src="images/maybach_silver.jpg" alt="Maybach Silver">
-
+                    <img class="car-img img-silver-s450" src="images/s450d_silver.jpg" alt="S 450 d Silver">
+                    <img class="car-img img-silver-s500" src="images/s500_silver.jpg" alt="S 500 Silver">
+                    <img class="car-img img-silver-s580e" src="images/s580e_silver.jpg" alt="S 580 e Silver">
+                    <img class="car-img img-silver-maybach" src="images/maybach_silver.jpg" alt="Maybach Silver">
                     <!-- Emerald Green -->
-                    <img class="car-img img-emerald-s450"
-                        src="images/s450_greem.webp"
-                        alt="S 450 d Emerald Green">
-                    <img class="car-img img-emerald-s500"
-                        src="images/s500_green.jpg"
-                        alt="S 500 Emerald Green">
-                    <img class="car-img img-emerald-s580e"
-                        src="images/s580_green.jpg"
-                        alt="S 580 e Emerald Green">
-                    <img class="car-img img-emerald-maybach"
-                        src="images/maybach_green.jpg"
-                        alt="Maybach Emerald Green">
+                    <img class="car-img img-emerald-s450" src="images/s450_greem.webp" alt="S 450 d Emerald Green">
+                    <img class="car-img img-emerald-s500" src="images/s500_green.jpg" alt="S 500 Emerald Green">
+                    <img class="car-img img-emerald-s580e" src="images/s580_green.jpg" alt="S 580 e Emerald Green">
+                    <img class="car-img img-emerald-maybach" src="images/maybach_green.jpg" alt="Maybach Emerald Green">
                 </div>
-
                 <div class="spec-summary">
                     <div class="spec spec-s450"><strong>S 450 d 4MATIC:</strong> 3.0l Dízel, 367 LE, Luxus hatékonyság
                     </div>
@@ -130,7 +98,6 @@
                         megalkuvás nélküli csúcs</div>
                 </div>
             </div>
-
             <div class="config-options">
                 <div class="option-group">
                     <h3>1. Válasszon Fényezést</h3>
@@ -145,7 +112,6 @@
                             title="Smaragd Zöld"></label>
                     </div>
                 </div>
-
                 <div class="option-group">
                     <h3>2. Válasszon Modellt</h3>
                     <div class="model-buttons">
@@ -158,15 +124,13 @@
             </div>
         </div>
     </section>
-
-    <section class="section-padding dark-bg-alt">
+    <section id="szolgaltatasok" class="section-padding dark-bg-alt">
         <div class="section-header">
             <span>Innováció & Kényelem</span>
             <h2>Első Osztályú Élmény Minden Kilométeren</h2>
             <p>Az S-Class utastere nem csupán egy utazási helyszín, hanem egy guruló wellness-szalon és digitális
                 parancsnoki központ.</p>
         </div>
-
         <div class="features-grid">
             <div class="feature-card">
                 <div class="feature-icon">&#9733;</div>
@@ -206,13 +170,12 @@
             </div>
         </div>
     </section>
-    <section class="section-padding dark-bg">
+    <section id="osszehasonlitas" class="section-padding dark-bg">
         <div class="section-header">
             <span>Technikai Adatok</span>
             <h2>S-Class Modellpaletta Összehasonlítás</h2>
             <p>Tekintse át a legfontosabb motorizációs és teljesítményparamétereket.</p>
         </div>
-
         <div class="comparison-wrapper">
             <table class="comparison-table">
                 <thead>
@@ -258,14 +221,12 @@
             </table>
         </div>
     </section>
-
-    <section class="section-padding dark-bg-alt">
+    <section id="galeria" class="section-padding dark-bg-alt">
         <div class="section-header">
             <span>Galéria</span>
             <h2>Az Elegancia Részletei</h2>
             <p>Pillantson be a részletekbe, amelyek az S-Class modellt a világ legkedveltebb luxusautójává teszik.</p>
         </div>
-
         <div class="gallery-strip">
             <div class="gallery-item">
                 <img src="images/S-class-kulso.jpg" alt="Külső dizájn">
@@ -281,13 +242,11 @@
             </div>
         </div>
     </section>
-
     <footer>
         <div><strong>Mercedes-Benz S-Class</strong></div>
         <p>"A luxus és az innováció tökéletes szintézise."</p>
-        <p>&copy; 2026 Mercedes-Benz Group AG. Minden jog fenntartva.</p>
+        <p>&copy; 2026 Mercedes-Benz</p>
     </footer>
-
 </body>
 
 </html>
