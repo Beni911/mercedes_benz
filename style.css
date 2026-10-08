@@ -31,22 +31,6 @@ body {
     z-index: 1;
 }
 
-@keyframes gradientShift {
-    0% {
-        background-position: 0% 0%;
-        opacity: 0.75;
-    }
-
-    50% {
-        background-position: 100% 100%;
-        opacity: 0.88;
-    }
-
-    100% {
-        background-position: 0% 100%;
-        opacity: 0.80;
-    }
-}
 
 nav,
 .bevezeto {
@@ -141,35 +125,6 @@ nav {
     transition: all 0.25s ease;
 }
 
-@media (min-width: 769px) {
-    .navbar a::after {
-        content: "";
-        position: absolute;
-        left: 1.1rem;
-        right: 1.1rem;
-        bottom: 0.55rem;
-        height: 2px;
-        background: linear-gradient(90deg, #d4af37, #f5e7a3);
-        transform: scaleX(0);
-        transform-origin: center;
-        transition: transform 0.25s ease;
-    }
-
-    .navbar a:hover,
-    .navbar a:focus-visible {
-        background: rgba(255, 255, 255, 0.1);
-        color: white;
-        box-shadow: inset 0 0 0 1px rgba(212, 175, 55, 0.4);
-        outline: none;
-    }
-
-    .navbar a:hover::after,
-    .navbar a:focus-visible::after {
-        transform: scaleX(1);
-    }
-
-}
-
 .bevezeto {
     flex: 1;
     display: flex;
@@ -226,295 +181,6 @@ nav {
     color: #000;
     border-color: #d4af37;
     box-shadow: 0 12px 30px rgba(212, 175, 55, 0.5);
-}
-
-@media (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
-
-    .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        padding: 0 !important;
-        max-height: 0 !important;
-        overflow: hidden;
-        border-bottom: none !important;
-        box-shadow: none !important;
-        visibility: hidden;
-        transition: max-height 0.4s ease, padding 0.4s ease, visibility 0.4s ease;
-    }
-
-    .navbar li {
-        width: 100%;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        border: 1px solid rgba(212, 175, 55, 0.7);
-        ;
-        border-radius: 999px;
-    }
-
-    .navbar a {
-        display: inline-block;
-        padding: 15px 0;
-        font-size: 1rem;
-        text-align: center;
-    }
-
-    .menu-checkbox:checked~.navbar {
-        max-height: 400px !important;
-        padding: 10px 0 20px 0 !important;
-        visibility: visible;
-    }
-
-    .menu-checkbox:checked~.hamburger span:nth-child(1) {
-        transform: translateY(9.5px) rotate(45deg);
-        background-color: #d4af37;
-    }
-
-    .menu-checkbox:checked~.hamburger span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .menu-checkbox:checked~.hamburger span:nth-child(3) {
-        transform: translateY(-9.5px) rotate(-45deg);
-        background-color: #d4af37;
-    }
-}
-
-@media (max-width: 640px) {
-    nav {
-        justify-content: space-between;
-    }
-}
-
-#kapcsolat {
-    padding: 80px 5vw 100px 5vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(180deg, #1a1a1a, #0a0a0a);
-}
-
-#kapcsolat header {
-    text-align: center;
-    margin-bottom: 40px;
-    max-width: 600px;
-}
-
-#kapcsolat header p:first-child {
-    color: #d4af37;
-    font-size: 0.85rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-#kapcsolat header h2 {
-    color: #8e8e8e;
-    font-size: clamp(2rem, 4vw, 3rem);
-    margin: 0 0 15px 0;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    text-shadow: 0 0 25px rgba(212, 175, 55, 0.15);
-}
-
-#kapcsolat header p:last-child {
-    color: #aaa;
-    line-height: 1.6;
-}
-
-#kapcsolat form {
-    width: 100%;
-    max-width: 550px;
-    background: rgba(30, 30, 30, 0.6);
-    padding: 40px;
-    border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(12px);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-#kapcsolat form:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7);
-}
-
-#kapcsolat form div {
-    margin-bottom: 25px;
-    position: relative;
-}
-
-#kapcsolat label {
-    display: block;
-    margin-bottom: 8px;
-    font-size: 0.8rem;
-    color: #888;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-weight: bold;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-#kapcsolat input,
-#kapcsolat select,
-#kapcsolat textarea {
-    width: 100%;
-    padding: 14px 16px;
-    background: rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    color: white;
-    font-family: inherit;
-    font-size: 1rem;
-    box-sizing: border-box;
-    transition: all 0.3s ease;
-}
-
-#kapcsolat textarea {
-    min-height: 120px;
-    resize: none;
-}
-
-#kapcsolat input:focus,
-#kapcsolat select:focus,
-#kapcsolat textarea:focus {
-    outline: none;
-    border-color: #d4af37;
-    background: rgba(0, 0, 0, 0.7);
-    box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
-    transform: scale(1.01);
-}
-
-#kapcsolat form div:focus-within label {
-    color: #d4af37;
-}
-
-#kapcsolat button {
-    width: 100%;
-    padding: 16px;
-    margin-top: 15px;
-    background: linear-gradient(90deg, #b8860b, #f5e7a3, #b8860b);
-    background-size: 200% auto;
-    color: #000;
-    border: none;
-    border-radius: 999px;
-    font-size: 1rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    animation: shineButton 4s infinite linear;
-}
-
-#kapcsolat button:hover {
-    transform: scale(1.03);
-    box-shadow: 0 10px 25px rgba(212, 175, 55, 0.4);
-    color: #111;
-}
-
-#kapcsolat button:active {
-    transform: scale(0.98);
-}
-
-@keyframes shineButton {
-    0% {
-        background-position: 0% center;
-    }
-
-    100% {
-        background-position: 200% center;
-    }
-}
-
-@media (max-width: 640px) {
-    #kapcsolat form {
-        padding: 25px 20px;
-    }
-
-    #kapcsolat button {
-        font-size: 0.9rem;
-    }
-}
-
-footer {
-    background: #050505;
-    padding: 60px 20px 40px;
-    text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    overflow: hidden;
-}
-
-footer::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 150px;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #d4af37, transparent);
-    transition: width 0.5s ease, opacity 0.5s ease;
-    opacity: 0.5;
-}
-
-footer:hover::before {
-    width: 300px;
-    opacity: 1;
-}
-
-footer div strong {
-    font-size: clamp(1.2rem, 2vw, 1.5rem);
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: #e6e6e6;
-    display: inline-block;
-    cursor: default;
-    transition: all 0.4s ease;
-}
-
-footer div strong:hover {
-    color: #d4af37;
-    text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
-    transform: scale(1.05);
-}
-
-footer p {
-    margin: 0;
-    color: #777;
-    font-size: 0.9rem;
-    letter-spacing: 0.08em;
-    transition: color 0.3s ease;
-}
-
-footer p:first-of-type {
-    font-style: italic;
-    color: #999;
-}
-
-footer p:last-child {
-    font-size: 0.75rem;
-    margin-top: 25px;
-    color: #707070;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-}
-
-footer p:hover {
-    color: #ccc;
 }
 
 #modellek {
@@ -670,8 +336,8 @@ footer p:hover {
 
 #tortenet img {
     width: 100%;
-    height: 380px;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.08);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
@@ -809,7 +475,301 @@ footer p:hover {
     margin: 0;
 }
 
+
+
+#kapcsolat {
+    padding: 80px 5vw 100px 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, #1a1a1a, #0a0a0a);
+}
+
+#kapcsolat header {
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+
+#kapcsolat header p:first-child {
+    color: #d4af37;
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#kapcsolat header h2 {
+    color: #8e8e8e;
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-shadow: 0 0 25px rgba(212, 175, 55, 0.15);
+}
+
+#kapcsolat header p:last-child {
+    color: #aaa;
+    line-height: 1.6;
+}
+
+#kapcsolat form {
+    width: 100%;
+    max-width: 550px;
+    background: rgba(30, 30, 30, 0.6);
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(12px);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#kapcsolat form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7);
+}
+
+#kapcsolat form div {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+#kapcsolat label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.8rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#kapcsolat input,
+#kapcsolat select,
+#kapcsolat textarea {
+    width: 100%;
+    padding: 14px 16px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: white;
+    font-family: inherit;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+#kapcsolat textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+#kapcsolat input:focus,
+#kapcsolat select:focus,
+#kapcsolat textarea:focus {
+    outline: none;
+    border-color: #d4af37;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+    transform: scale(1.01);
+}
+
+#kapcsolat form div:focus-within label {
+    color: #d4af37;
+}
+
+#kapcsolat button {
+    width: 100%;
+    padding: 16px;
+    margin-top: 15px;
+    background: linear-gradient(90deg, #b8860b, #f5e7a3, #b8860b);
+    background-size: 200% auto;
+    color: #000;
+    border: none;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    animation: shineButton 4s infinite linear;
+}
+
+#kapcsolat button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(212, 175, 55, 0.4);
+    color: #111;
+}
+
+#kapcsolat button:active {
+    transform: scale(0.98);
+}
+
+
+footer {
+    background: #050505;
+    padding: 60px 20px 40px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    overflow: hidden;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #d4af37, transparent);
+    transition: width 0.5s ease, opacity 0.5s ease;
+    opacity: 0.5;
+}
+
+footer:hover::before {
+    width: 300px;
+    opacity: 1;
+}
+
+footer div strong {
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #e6e6e6;
+    display: inline-block;
+    cursor: default;
+    transition: all 0.4s ease;
+}
+
+footer div strong:hover {
+    color: #d4af37;
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+    transform: scale(1.05);
+}
+
+footer p {
+    margin: 0;
+    color: #777;
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    transition: color 0.3s ease;
+}
+
+footer p:first-of-type {
+    font-style: italic;
+    color: #999;
+}
+
+footer p:last-child {
+    font-size: 0.75rem;
+    margin-top: 25px;
+    color: #707070;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+footer p:hover {
+    color: #ccc;
+}
+
+
+@media (min-width: 769px) {
+    .navbar a::after {
+        content: "";
+        position: absolute;
+        left: 1.1rem;
+        right: 1.1rem;
+        bottom: 0.55rem;
+        height: 2px;
+        background: linear-gradient(90deg, #d4af37, #f5e7a3);
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 0.25s ease;
+    }
+
+    .navbar a:hover,
+    .navbar a:focus-visible {
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+        box-shadow: inset 0 0 0 1px rgba(212, 175, 55, 0.4);
+        outline: none;
+    }
+
+    .navbar a:hover::after,
+    .navbar a:focus-visible::after {
+        transform: scaleX(1);
+    }
+
+}
+
 @media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 !important;
+        max-height: 0 !important;
+        overflow: hidden;
+        border-bottom: none !important;
+        box-shadow: none !important;
+        visibility: hidden;
+        transition: max-height 0.4s ease, padding 0.4s ease, visibility 0.4s ease;
+    }
+
+    .navbar li {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(212, 175, 55, 0.7);
+        ;
+        border-radius: 999px;
+    }
+
+    .navbar a {
+        display: inline-block;
+        padding: 15px 0;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .menu-checkbox:checked~.navbar {
+        max-height: 400px !important;
+        padding: 10px 0 20px 0 !important;
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked~.hamburger span:nth-child(1) {
+        transform: translateY(9.5px) rotate(45deg);
+        background-color: #d4af37;
+    }
+
+    .menu-checkbox:checked~.hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-checkbox:checked~.hamburger span:nth-child(3) {
+        transform: translateY(-9.5px) rotate(-45deg);
+        background-color: #d4af37;
+    }
+
     .timeline::before {
         left: 20px;
     }
@@ -823,5 +783,47 @@ footer p:hover {
 
     .timeline-item:nth-child(even) {
         left: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    nav {
+        justify-content: space-between;
+    }
+
+    #kapcsolat form {
+        padding: 25px 20px;
+    }
+
+    #kapcsolat button {
+        font-size: 0.9rem;
+    }
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 0%;
+        opacity: 0.75;
+    }
+
+    50% {
+        background-position: 100% 100%;
+        opacity: 0.88;
+    }
+
+    100% {
+        background-position: 0% 100%;
+        opacity: 0.80;
+    }
+}
+
+
+@keyframes shineButton {
+    0% {
+        background-position: 0% center;
+    }
+
+    100% {
+        background-position: 200% center;
     }
 }
