@@ -1,11 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mercedes-AMG GT | Teljesítmény és karakter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/Mercedes-Benz-Logo-Background-PNG.png" type="image/png">
 </head>
-<body>
-    
+
+<body id="gt">
+    <header class="top">
+        <nav>
+            <a class="link_semmi" href="index.html">
+                <div class="cim">
+                    <img src="images/Mercedes-Benz-Logo-Background-PNG.png" alt="Mercedes-Benz logó">
+                    <strong> MERCEDES-BENZ</strong>
+                </div>
+            </a>
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="navbar">
+                <li><a href="#jellemzok">Jellemzők</a></li>
+                <li><a href="#specifikacio">Specifikáció</a></li>
+                <li><a href="#galeria">Galéria</a></li>
+            </ul>
+        </nav>
+        <div class="bevezeto">
+            <p class="alcim">AMG PERFORMANCE</p>
+            <h1>Mercedes-AMG GT</h1>
+            <p class="leiras">Kézzel alkotott sportautó, amely a precíz mérnöki munka, az izgalmas vezetési élmény és a
+                látványos forma tökéletes egyensúlyára épül.</p>
+            <a href="#specifikacio">Főbb adatok</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="jellemzok" class="section-padding dark-bg">
+            <div class="section-header">
+                <span>Sportos karakter</span>
+                <h2>Erő, forma, magabiztosság</h2>
+                <p>A GT egy olyan Mercedes, amelynél minden részlet a teljesítményt szolgálja, mégis megmarad az a
+                    prémium hangulat, ami a márkát felismerhetővé teszi.</p>
+            </div>
+            <div class="features-grid gt-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">01</div>
+                    <h3>Hosszú motorháztető</h3>
+                    <p>A klasszikus sportautó-arányok azonnal jelzik, hogy ez az autó a vezetőről és a vezetés élményéről
+                        szól.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">02</div>
+                    <h3>AMG hangolás</h3>
+                    <p>A futómű, a kormányzás és a hajtáslánc összehangolt működése határozott, közvetlen visszajelzést
+                        ad minden helyzetben.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">03</div>
+                    <h3>Sportos belső tér</h3>
+                    <p>A vezetőközpontú utastér és az áramvonalas részletek a tempós, mégis elegáns utazás élményét
+                        erősítik.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="specifikacio" class="section-padding dark-bg-alt">
+            <div class="section-header">
+                <span>Rövid összegzés</span>
+                <h2>Főbb adatok</h2>
+                <p>Ez egy egyszerű, bemutató jellegű áttekintés a GT karakteréről és képességeiről.</p>
+            </div>
+            <div class="comparison-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Jellemző</th>
+                            <th>Mercedes-AMG GT</th>
+                            <th>Hatás</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Motor</td>
+                            <td>V8 biturbó</td>
+                            <td>Erős, karakteres gyorsulás</td>
+                        </tr>
+                        <tr>
+                            <td>Vezetési pozíció</td>
+                            <td>Alacsony, közvetlen</td>
+                            <td>Sportautós kapcsolat az úttal</td>
+                        </tr>
+                        <tr>
+                            <td>Hangulat</td>
+                            <td>AMG stílus</td>
+                            <td>Feszes, prémium és agresszív</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="galeria" class="section-padding dark-bg">
+            <div class="section-header">
+                <span>Galéria</span>
+                <h2>Részletek közelről</h2>
+                <p>Az alábbi képek a GT formavilágát és sportos jelenlétét mutatják be egyszerűen, különösebb körítés
+                    nélkül.</p>
+            </div>
+            <div class="gallery-strip">
+                <div class="gallery-item">
+                    <img src="images/amg-gt-2.avif" alt="Mercedes-AMG GT külső">
+                    <div class="gallery-overlay">Mercedes-AMG GT</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/GT-belso.avif" alt="Mercedes sportautó részlet">
+                    <div class="gallery-overlay">Sportos vonalvezetés</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/GT-front.jpg" alt="Mercedes-AMG GT másik nézetből">
+                    <div class="gallery-overlay">AMG jelenlét</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div><strong>Mercedes-AMG GT</strong></div>
+        <p>„A teljesítmény, amelyet látni és érezni is lehet.”</p>
+        <p>&copy; 2026 Mercedes-Benz</p>
+    </footer>
 </body>
+
 </html>
