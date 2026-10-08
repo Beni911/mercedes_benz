@@ -371,7 +371,7 @@ nav {
 
 #kapcsolat textarea {
     min-height: 120px;
-    resize: vertical;
+    resize: none;
 }
 
 #kapcsolat input:focus,
