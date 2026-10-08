@@ -141,30 +141,33 @@ nav {
     transition: all 0.25s ease;
 }
 
-.navbar a::after {
-    content: "";
-    position: absolute;
-    left: 1.1rem;
-    right: 1.1rem;
-    bottom: 0.55rem;
-    height: 2px;
-    background: linear-gradient(90deg, #d4af37, #f5e7a3);
-    transform: scaleX(0);
-    transform-origin: center;
-    transition: transform 0.25s ease;
-}
+@media (min-width: 769px) {
+    .navbar a::after {
+        content: "";
+        position: absolute;
+        left: 1.1rem;
+        right: 1.1rem;
+        bottom: 0.55rem;
+        height: 2px;
+        background: linear-gradient(90deg, #d4af37, #f5e7a3);
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 0.25s ease;
+    }
 
-.navbar a:hover,
-.navbar a:focus-visible {
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    box-shadow: inset 0 0 0 1px rgba(212, 175, 55, 0.4);
-    outline: none;
-}
+    .navbar a:hover,
+    .navbar a:focus-visible {
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+        box-shadow: inset 0 0 0 1px rgba(212, 175, 55, 0.4);
+        outline: none;
+    }
 
-.navbar a:hover::after,
-.navbar a:focus-visible::after {
-    transform: scaleX(1);
+    .navbar a:hover::after,
+    .navbar a:focus-visible::after {
+        transform: scaleX(1);
+    }
+
 }
 
 .bevezeto {
@@ -235,32 +238,37 @@ nav {
         top: 100%;
         left: 0;
         width: 100%;
-        background: rgba(15, 15, 15, 0.98);
-        backdrop-filter: blur(15px);
         flex-direction: column;
-        padding: 0;
-        max-height: 0;
+        align-items: center;
+        padding: 0 !important;
+        max-height: 0 !important;
         overflow: hidden;
-        transition: max-height 0.4s ease, padding 0.4s ease;
-        border-bottom: 1px solid transparent;
+        border-bottom: none !important;
+        box-shadow: none !important;
+        visibility: hidden;
+        transition: max-height 0.4s ease, padding 0.4s ease, visibility 0.4s ease;
     }
 
     .navbar li {
         width: 100%;
         text-align: center;
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(212, 175, 55, 0.7);;
+        border-radius: 999px;
     }
-
+    
     .navbar a {
-        display: block;
+        display: inline-block;
         padding: 15px 0;
         font-size: 1rem;
+        text-align: center;
     }
 
     .menu-checkbox:checked~.navbar {
-        max-height: 400px;
-        padding: 10px 0 20px 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+        max-height: 400px !important;
+        padding: 10px 0 20px 0 !important;
+        visibility: visible;
     }
 
     .menu-checkbox:checked~.hamburger span:nth-child(1) {
