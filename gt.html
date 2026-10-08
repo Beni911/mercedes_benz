@@ -105,6 +105,87 @@
             </div>
         </section>
 
+        <section id="amg-modes" class="section-padding dark-bg">
+            <div class="section-header">
+                <span>Vezetési Dinamika</span>
+                <h2>AMG DYNAMIC SELECT</h2>
+                <p>Válassz karaktert egyetlen gombnyomással. A háttérfény és a teljesítmény-karakterisztika azonnal alkalmazkodik.</p>
+            </div>
+            
+            <div class="mode-selector">
+                <input type="radio" name="drive-mode" id="mode-comfort" checked>
+                <input type="radio" name="drive-mode" id="mode-sport">
+                <input type="radio" name="drive-mode" id="mode-race">
+
+                <div class="mode-buttons">
+                    <label for="mode-comfort" class="mode-btn">Comfort</label>
+                    <label for="mode-sport" class="mode-btn">Sport+</label>
+                    <label for="mode-race" class="mode-btn">Race</label>
+                </div>
+
+                <div class="mode-display">
+                    <div class="mode-card comfort">
+                        <h3>Comfort Mód</h3>
+                        <p>Finom rugózás, csendes kipufogó és selymes váltások a mindennapi utazásokhoz.</p>
+                    </div>
+                    <div class="mode-card sport">
+                        <h3>Sport+ Mód</h3>
+                        <p>Közvetlen gázreakció, keményebb futómű és visszadurrogó kipufogóhang.</p>
+                    </div>
+                    <div class="mode-card race">
+                        <h3>RACE Mód</h3>
+                        <p>Közúti versenypálya: maximális teljesítmény, kikapcsolt elektronikai korlátok.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="telemetry" class="section-padding dark-bg-alt">
+            <div class="section-header">
+                <span>Műszaki Adatok</span>
+                <h2>V8 Biturbo Telemetria</h2>
+                <p>A mérnöki precizitás és a nyers erő találkozása valós idejű AMG teljesítménnyel.</p>
+            </div>
+
+            <div class="telemetry-grid">
+                <div class="stat-card">
+                    <div class="stat-circle" style="--percent: 85%;">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="42" class="bg-circle"></circle>
+                            <circle cx="50" cy="50" r="42" class="progress-circle"></circle>
+                        </svg>
+                        <span class="stat-value">585</span>
+                    </div>
+                    <h4>Lóerő (LÉ)</h4>
+                    <p>Maximális teljesítmény</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-circle" style="--percent: 92%;">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="42" class="bg-circle"></circle>
+                            <circle cx="50" cy="50" r="42" class="progress-circle"></circle>
+                        </svg>
+                        <span class="stat-value">800</span>
+                    </div>
+                    <h4>Nyomaték (Nm)</h4>
+                    <p>2500–4500 ford./perc között</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-circle" style="--percent: 96%;">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="42" class="bg-circle"></circle>
+                            <circle cx="50" cy="50" r="42" class="progress-circle"></circle>
+                        </svg>
+                        <span class="stat-value">3.2s</span>
+                    </div>
+                    <h4>0–100 km/h</h4>
+                    <p>Aero-Aktivitással</p>
+                </div>
+            </div>
+        </section>
+
         <section id="galeria" class="section-padding dark-bg">
             <div class="section-header">
                 <span>Galéria</span>
@@ -127,6 +208,7 @@
                 </div>
             </div>
         </section>
+
     </main>
 
     <footer>
