@@ -1,11 +1,237 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mercedes-Benz S-Class | A Luxus Csúcsa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+
+<body id="s_class">
+
+    <header class="top">
+        <nav>
+            <a class="link_semmi" href="index.html">
+                <div class="cim">
+                    <img src="images/Mercedes-Benz-Logo-Background-PNG.png" alt="Mercedes-Benz logó">
+                    <strong> MERCEDES-BENZ</strong>
+                </div>
+            </a>
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="navbar">
+                <li><a href="#modellek">Konfigurátor</a></li>
+                <li><a href="#tortenet">Szolgáltatások</a></li>
+                <li><a href="#technologia">Összehasonlítás</a></li>
+                <li><a href="#kapcsolat">Galéria</a></li>
+            </ul>
+        </nav>
+
+        <div class="bevezeto">
+            <p class="alcim">A Luxus Zászlóshajója</p>
+            <h1> Mercedes-Benz S-Class</h1>
+            <p class="leiras">Ahol az élvonalbeli technológia, a mesteri kézművesség és a kompromisszummentes kényelem
+                találkozik, hogy újraértelmezze a prémium mobilitás határait. </p>
+            <a href="#konfigurator">Konfiguráció & Specifikációk</a>
+        </div>
+    </header>
+
+<section id="konfigurator" class="section-padding dark-bg">
+
+    <input type="radio" name="color" id="color-obsidian" checked class="css-radio">
+    <input type="radio" name="color" id="color-graphite" class="css-radio">
+    <input type="radio" name="color" id="color-silver" class="css-radio">
+    <input type="radio" name="color" id="color-emerald" class="css-radio">
+
+    <input type="radio" name="model" id="model-s450" checked class="css-radio">
+    <input type="radio" name="model" id="model-s500" class="css-radio">
+    <input type="radio" name="model" id="model-s580e" class="css-radio">
+    <input type="radio" name="model" id="model-maybach" class="css-radio">
+
+    <div class="section-header">
+        <span>Interaktív Bemutató</span>
+        <h2>Személyre Szabott Exkluzivitás</h2>
+        <p>Válassza ki a prémium fényezést és a kivitelt, hogy megtalálja az Ön egyéniségéhez tökéletesen illeszkedő S-Class modellt.</p>
+    </div>
+
+    <div class="configurator-container">
+        <div class="config-preview">
+
+            <div class="preview-img-wrapper">
+                <img class="car-img img-obsidian" src="https://placehold.co/800x450/111111/d4af37?text=S-Class+-+Obsidian+Black" alt="Obsidian Black">
+                <img class="car-img img-graphite" src="https://placehold.co/800x450/2a3439/d4af37?text=S-Class+-+Graphite+Grey" alt="Graphite Grey">
+                <img class="car-img img-silver" src="https://placehold.co/800x450/8b8589/111111?text=S-Class+-+Silver" alt="High-Tech Silver">
+                <img class="car-img img-emerald" src="https://placehold.co/800x450/15281e/d4af37?text=S-Class+-+Emerald+Green" alt="Emerald Green">
+            </div>
+
+            <div class="spec-summary">
+                <div class="spec spec-s450"><strong>S 450 d 4MATIC:</strong> 3.0l Dízel, 367 LE, Luxus hatékonyság</div>
+                <div class="spec spec-s500"><strong>S 500 4MATIC:</strong> 3.0 literes soros 6 hengeres motor EQ Boost technológiával, 435 LE, 0-100 km/h: 4.9 mp.</div>
+                <div class="spec spec-s580e"><strong>S 580 e Plug-in Hybrid:</strong> Hibrid teljesítmény, 510 LE, Tisztán elektromos hatótáv</div>
+                <div class="spec spec-maybach"><strong>Mercedes-Maybach S 680:</strong> 6.0l V12, 612 LE, A megalkuvás nélküli csúcs</div>
+            </div>
+        </div>
+
+        <div class="config-options">
+            <div class="option-group">
+                <h3>1. Válasszon Fényezést</h3>
+                <div class="color-swatches">
+                    <label for="color-obsidian" class="swatch" style="background: #111111;" title="Obsidian Fekete"></label>
+                    <label for="color-graphite" class="swatch" style="background: #2a3439;" title="Grafit Szürke"></label>
+                    <label for="color-silver" class="swatch" style="background: #8b8589;" title="High-Tech Ezüst"></label>
+                    <label for="color-emerald" class="swatch" style="background: #232b2b;" title="Smaragd Zöld"></label>
+                </div>
+            </div>
+
+            <div class="option-group">
+                <h3>2. Válasszon Modellt</h3>
+                <div class="model-buttons">
+                    <label for="model-s450" class="model-btn">S 450 d</label>
+                    <label for="model-s500" class="model-btn">S 500 Benzines</label>
+                    <label for="model-s580e" class="model-btn">S 580 e Hybrid</label>
+                    <label for="model-maybach" class="model-btn">Maybach V12</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="section-padding dark-bg-alt">
+        <div class="section-header">
+            <span>Innováció & Kényelem</span>
+            <h2>Első Osztályú Élmény Minden Kilométeren</h2>
+            <p>Az S-Class utastere nem csupán egy utazási helyszín, hanem egy guruló wellness-szalon és digitális
+                parancsnoki központ.</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">&#9733;</div>
+                <h3>MBUX Hiperscreen & AR HUD</h3>
+                <p>OLED központi kijelző és kiterjesztett valóságú Head-up Display, amely a navigációs információkat
+                    közvetlenül a vezető látóterébe vetíti.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#9830;</div>
+                <h3>ENERGIZING Komfort</h3>
+                <p>Összehangolt klíma, ülésfűtés/szellőztetés, masszázsprogramok és hangulatvilágítás az utasok aktuális
+                    hangulatához igazítva.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#9881;</div>
+                <h3>Hátsó Kerék Kormányzás</h3>
+                <p>Akár 10 fokos elfordulási szög a hátsó kerekeken, amelynek köszönhetően a nagyméretű zászlóshajó
+                    fordulóköre egy kompakt autóéval vetekszik.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#9632;</div>
+                <h3>Burmester 4D Térhatású Hang</h3>
+                <p>31 prémium hangszóró és az ülésekbe épített rezegtetők alakítják át a zenehallgatást fizikai
+                    élménnyé.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#9731;</div>
+                <h3>DIGITAL LIGHT fényszórók</h3>
+                <p>Több millió pixeles felbontású világítási rendszer, amely képes figyelmeztetéseket vetíteni az
+                    úttestre.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#9889;</div>
+                <h3>200 kW-os DC Gyorstöltés</h3>
+                <p>Mindössze 15 perc alatt akár 300 kilométernyi hatótávolságnak megfelelő energiát képes felvenni az
+                    akkumulátor.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section-padding dark-bg">
+        <div class="section-header">
+            <span>Technikai Adatok</span>
+            <h2>S-Class Modellpaletta Összehasonlítás</h2>
+            <p>Tekintse át a legfontosabb motorizációs és teljesítményparamétereket.</p>
+        </div>
+
+        <div class="comparison-wrapper">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Jellemző</th>
+                        <th>S 450 d 4MATIC</th>
+                        <th>S 500 4MATIC</th>
+                        <th>Maybach S 680</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Motor Típusa</td>
+                        <td>3.0L Soros 6 hengeres dízel</td>
+                        <td>3.0L Soros 6 hengeres benzin</td>
+                        <td>6.0L V12 biturbó</td>
+                    </tr>
+                    <tr>
+                        <td>Teljesítmény</td>
+                        <td>367 LE (+ 23 LE hibrid)</td>
+                        <td>435 LE (+ 22 LE hibrid)</td>
+                        <td>612 LE</td>
+                    </tr>
+                    <tr>
+                        <td>Nyomaték</td>
+                        <td>750 Nm</td>
+                        <td>520 Nm</td>
+                        <td>900 Nm</td>
+                    </tr>
+                    <tr>
+                        <td>Gyorsulás (0-100 km/h)</td>
+                        <td>5.0 mp</td>
+                        <td>4.9 mp</td>
+                        <td>4.5 mp</td>
+                    </tr>
+                    <tr>
+                        <td>Végsebesség</td>
+                        <td>250 km/h (elektronikusan korlátozott)</td>
+                        <td>250 km/h</td>
+                        <td>250 km/h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="section-padding dark-bg-alt">
+        <div class="section-header">
+            <span>Galéria</span>
+            <h2>Az Elegancia Részletei</h2>
+            <p>Pillantson be a részletekbe, amelyek az S-Class modellt a világ legkedveltebb luxusautójává teszik.</p>
+        </div>
+
+        <div class="gallery-strip">
+            <div class="gallery-item">
+                <img src="images/S-class-kulso.jpg" alt="Külső dizájn">
+                <div class="gallery-overlay">Fenséges Külső Dizájn</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/S-class-interior.jpg" alt="Exkluzív belső">
+                <div class="gallery-overlay">Első osztályú enteriőr</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/S-class-belso.avif" alt="Digitális műszerfal">
+                <div class="gallery-overlay">MBUX Digitan Cockpit</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div><strong>Mercedes-Benz S-Class</strong></div>
+        <p>"A luxus és az innováció tökéletes szintézise."</p>
+        <p>&copy; 2026 Mercedes-Benz Group AG. Minden jog fenntartva.</p>
+    </footer>
+
 </body>
+
 </html>
