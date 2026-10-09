@@ -1,11 +1,232 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mercedes-Benz GLE | Parancsnoki Jelenlét és Luxus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/Mercedes-Benz-Logo-Background-PNG.png" type="image/png">
 </head>
-<body>
-    
+
+<body id="gle">
+    <header class="hero-header">
+        <nav class="main-nav">
+            <a class="logo-link" href="index.html">
+                <div class="brand">
+                    <img src="images/Mercedes-Benz-Logo-Background-PNG.png" alt="Mercedes-Benz logó">
+                    <strong>MERCEDES-BENZ</strong>
+                </div>
+            </a>
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-links">
+                <li><a href="#koncepcio">Koncepció</a></li>
+                <li><a href="#hajtas">Hajtáslánc</a></li>
+                <li><a href="#kapacitas">Kapacitás</a></li>
+                <li><a href="#galeria">Galéria</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-content">
+            <span class="badge">OFFROAD & LUXURY SUV</span>
+            <h1>MERCEDES-BENZ GLE</h1>
+            <p class="tagline">Erőfeszítés nélküli dominancia minden terepen. Inteligencia, prémium kényelem és
+                megállíthatatlan 4MATIC hajtás.</p>
+
+            <div class="hero-quick-stats">
+                <div class="q-stat">
+                    <strong>3500 kg</strong>
+                    <span>Vontatás</span>
+                </div>
+                <div class="q-stat-divider"></div>
+                <div class="q-stat">
+                    <strong>100%</strong>
+                    <span>4MATIC Torque</span>
+                </div>
+                <div class="q-stat-divider"></div>
+                <div class="q-stat">
+                    <strong>2010 L</strong>
+                    <span>Csomagtér</span>
+                </div>
+            </div>
+
+            <a href="#hajtas" class="cta-button">Főbb adatok</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="koncepcio" class="section-container">
+            <div class="section-title">
+                <span class="sub-heading">Karakter és Formaterv</span>
+                <h2>Sokoldalúság Felsőfokon</h2>
+            </div>
+
+            <div class="split-features">
+                <article class="split-card">
+                    <div class="split-img-wrapper">
+                        <img src="images/gle-front.webp" alt="GLE Front Kialakítás">
+                    </div>
+                    <div class="split-info">
+                        <span class="feature-badge">Külső Formaterv</span>
+                        <h3>Markáns Hűtőmaszk & Multibeam LED</h3>
+                        <p>A függőleges lamellás hűtőrács és a precíziós Multibeam LED fényszórók éjszaka is nappali látásviszonyokat nyújtanak, egyedi karaktert kölcsönözve az autónak.</p>
+                    </div>
+                </article>
+
+                <article class="split-card reverse">
+                    <div class="split-img-wrapper">
+                        <img src="images/gle-kijelzok.avif" alt="GLE Utastér Kijelzők">
+                    </div>
+                    <div class="split-info">
+                        <span class="feature-badge">Belső Kényelem</span>
+                        <h3>Szélesvásznú MBUX Cockpit</h3>
+                        <p>Két nagyfelbontású 12,3 hüvelykes kijelző egyesül az áramvonalas műszerfalon. Kiterjesztett valóságú navigáció és mesterséges intelligencia alapú hangvezérlés.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="hajtas" class="section-container alt-bg">
+            <div class="section-title">
+                <span class="sub-heading">Teljesítmény és Hibrid Technológia</span>
+                <h2>Motorváltozatok Összehasonlítása</h2>
+            </div>
+
+            <div class="variant-grid">
+                <div class="variant-card">
+                    <div class="variant-header">
+                        <span class="v-tag">Mild-Hibrid Dízel</span>
+                        <h3>GLE 300 d 4MATIC</h3>
+                    </div>
+                    <ul class="v-specs">
+                        <li><strong>Teljesítmény:</strong> 269 LE + 20 LE EQ Boost</li>
+                        <li><strong>Nyomaték:</strong> 550 Nm</li>
+                        <li><strong>0-100 km/h:</strong> 6.9 mp</li>
+                        <li><strong>Hajtás:</strong> All-Wheel Drive 4MATIC</li>
+                    </ul>
+                    <div class="v-footer">Ideális hosszú utazásokhoz</div>
+                </div>
+
+                <div class="variant-card featured">
+                    <div class="variant-header">
+                        <span class="v-tag gold">Plug-in Hibrid</span>
+                        <h3>GLE 400 e 4MATIC</h3>
+                    </div>
+                    <ul class="v-specs">
+                        <li><strong>Rendszerteljesítmény:</strong> 381 LE</li>
+                        <li><strong>Elektromos hatótáv:</strong> akár 100 km</li>
+                        <li><strong>Nyomaték:</strong> 650 Nm</li>
+                        <li><strong>Töltés:</strong> DC gyorstöltés (30 perc)</li>
+                    </ul>
+                    <div class="v-footer">Zéró emisszió a városban</div>
+                </div>
+
+                <div class="variant-card">
+                    <div class="variant-header">
+                        <span class="v-tag">V6 Biturbo Mild-Hibrid</span>
+                        <h3>GLE 450 d 4MATIC</h3>
+                    </div>
+                    <ul class="v-specs">
+                        <li><strong>Teljesítmény:</strong> 367 LE + 20 LE EQ Boost</li>
+                        <li><strong>Nyomaték:</strong> 750 Nm</li>
+                        <li><strong>0-100 km/h:</strong> 5.6 mp</li>
+                        <li><strong>Vontatás:</strong> 3500 kg kapaszkodóerő</li>
+                    </ul>
+                    <div class="v-footer">Maximális nyomaték és húzóerő</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kapacitas" class="section-container">
+            <div class="section-title">
+                <span class="sub-heading">Képességek & Terhelhetőség</span>
+                <h2>Terepképesség és Célszerűség</h2>
+            </div>
+
+            <div class="capability-bars">
+                <div class="cap-item">
+                    <div class="cap-info">
+                        <span>Gázlómélység (E-ACTIVE BODY CONTROL)</span>
+                        <strong>600 mm</strong>
+                    </div>
+                    <div class="cap-track">
+                        <div class="cap-fill" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <div class="cap-item">
+                    <div class="cap-info">
+                        <span>Hasmagasság emelés Terep módban</span>
+                        <strong>+90 mm</strong>
+                    </div>
+                    <div class="cap-track">
+                        <div class="cap-fill" style="width: 75%;"></div>
+                    </div>
+                </div>
+
+                <div class="cap-item">
+                    <div class="cap-info">
+                        <span>Maximális Csomagtér Térfogat</span>
+                        <strong>2010 Liter</strong>
+                    </div>
+                    <div class="cap-track">
+                        <div class="cap-fill" style="width: 95%;"></div>
+                    </div>
+                </div>
+
+                <div class="cap-item">
+                    <div class="cap-info">
+                        <span>Vontatási Kapacitás (Fékezett utánfutó)</span>
+                        <strong>3500 kg</strong>
+                    </div>
+                    <div class="cap-track">
+                        <div class="cap-fill" style="width: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="section-container alt-bg">
+            <div class="section-title">
+                <span class="sub-heading">Vizuális Élmény</span>
+                <h2>Bento Galéria</h2>
+            </div>
+
+            <div class="bento-gallery">
+                <div class="bento-item bento-large">
+                    <img src="images/gle-offroad.avif" alt="GLE Terepen">
+                    <div class="bento-caption">E-ACTIVE BODY CONTROL futómű</div>
+                </div>
+                <div class="bento-item">
+                    <img src="images/gle-kormany.jpeg" alt="GLE Kormánykerék">
+                    <div class="bento-caption">Kapacitív sportkormány</div>
+                </div>
+                <div class="bento-item">
+                    <img src="images/gle-back.jpg" alt="GLE Hátsó nézet">
+                    <div class="bento-caption">Ikonikus LED lámpatestek</div>
+                </div>
+                <div class="bento-item bento-wide">
+                    <img src="images/gle-ules.avif" alt="GLE Családi utazás">
+                    <div class="bento-caption">Opcionális 7 üléses elrendezés</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-brand">
+            <strong>MERCEDES-BENZ GLE</strong>
+            <p>A luxus és a sokoldalúság csúcsa.</p>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Mercedes-Benz Group AG</span>
+        </div>
+    </footer>
 </body>
+
 </html>
