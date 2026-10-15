@@ -142,6 +142,7 @@ html {
         text-align: center;
         padding: 2rem 5vw 4rem;
     }
+    
 
     .bevezeto h1 {
         font-size: clamp(2.8rem, 6vw, 4.8rem);
@@ -150,6 +151,9 @@ html {
         margin: 0.5rem 0 1.5rem;
         color: #ffffff;
         text-shadow: 0 4px 25px rgba(0, 0, 0, 0.9), 0 2px 5px rgba(0, 0, 0, 0.9);
+        opacity: 0;
+        animation: slideInFromBottom 0.8s ease forwards;
+        animation-delay: 0.4s; /* Egymás után úsznak be */
     }
 
     .bevezeto .alcim {
@@ -159,6 +163,9 @@ html {
         margin: 0;
         font-weight: 700;
         text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+        opacity: 0; /* Kezdetben rejtve vannak, hogy ne villanjanak fel */
+        animation: slideInFromBottom 0.8s ease forwards;
+        animation-delay: 0.2s; /* Kicsit később indul */
     }
 
     .bevezeto .leiras {
@@ -167,6 +174,9 @@ html {
         margin-bottom: 2.2rem;
         color: #f0f0f0;
         text-shadow: 0 3px 15px rgba(0, 0, 0, 0.9);
+        opacity: 0;
+        animation: slideInFromBottom 0.8s ease forwards;
+        animation-delay: 0.6s;
     }
 
     .bevezeto a {
@@ -181,6 +191,9 @@ html {
         border: 1px solid rgba(212, 175, 55, 0.7);
         backdrop-filter: blur(8px);
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        animation: slideInFromBottom 0.8s ease forwards;
+        animation-delay: 0.8s;
     }
 
     .bevezeto a:hover {
@@ -819,6 +832,17 @@ html {
     }
 
 
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(40px); /* Alulról indul */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* A eredeti helyére érkezik */
+    }
 }
 
 @keyframes gradientShift {
