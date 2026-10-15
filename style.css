@@ -142,7 +142,7 @@ html {
         text-align: center;
         padding: 2rem 5vw 4rem;
     }
-    
+
 
     .bevezeto h1 {
         font-size: clamp(2.8rem, 6vw, 4.8rem);
@@ -702,6 +702,15 @@ html {
         color: #ccc;
     }
 
+    header nav {
+        position: relative;
+        z-index: 1000;
+    }
+
+    .link_semmi {
+        text-decoration: none;
+    }
+
 
     @media (min-width: 769px) {
         .navbar a::after {
@@ -730,11 +739,6 @@ html {
             transform: scaleX(1);
         }
 
-    }
-
-    header nav {
-        position: relative;
-        z-index: 1000;
     }
 
     @media (max-width: 768px) {
@@ -839,6 +843,7 @@ html {
         opacity: 0;
         transform: translateY(40px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -1870,7 +1875,7 @@ html {
         text-align: center;
         padding: 2rem 5vw 4rem;
     }
-    
+
     .bevezeto .badge {
         background: rgba(31, 151, 137, 0.15);
         color: rgb(24, 146, 132);
