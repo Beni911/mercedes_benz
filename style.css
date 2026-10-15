@@ -2497,16 +2497,19 @@ html {
         background: url('images/gle-hatter.jpg') center/cover no-repeat;
         display: flex;
         flex-direction: column;
+        overflow: hidden;
     }
 
     .hero-header::before {
         content: '';
         position: absolute;
         inset: 0;
-        background: linear-gradient(180deg,
-                rgba(11, 15, 20, 0.85) 0%,
-                rgba(11, 15, 20, 0.4) 50%,
-                rgba(11, 15, 20, 0.95) 100%);
+        background: linear-gradient(135deg,
+                rgba(0, 0, 0, 0.7) 0%,
+                rgba(0, 0, 0, 0.2) 50%,
+                rgba(0, 0, 0, 0.9) 100%);
+        background-size: 200% 200%;
+        animation: gradientShift 8s ease infinite alternate;
         z-index: 1;
     }
 
