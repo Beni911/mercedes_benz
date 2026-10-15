@@ -863,7 +863,6 @@ html {
 
 @keyframes fillProgress {
     to {
-        /* Kiszámolja a beállított szórásértéket */
         stroke-dashoffset: calc(264 - (264 * var(--percent)) / 100);
     }
 }
@@ -1224,7 +1223,7 @@ html {
         background: #050505;
         padding: 60px 20px 40px;
         text-align: center;
-        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
         position: relative;
         display: flex;
         flex-direction: column;
@@ -1239,10 +1238,16 @@ html {
         top: 0;
         left: 50%;
         transform: translateX(-50%);
-        width: 180px;
+        width: 150px;
         height: 2px;
         background: linear-gradient(90deg, transparent, #e2e8f0, transparent);
-        opacity: 0.6;
+        transition: width 0.5s ease, opacity 0.5s ease;
+        opacity: 0.5;
+    }
+
+    footer:hover::before {
+        width: 300px;
+        opacity: 1;
     }
 
     footer div strong {
@@ -1250,6 +1255,15 @@ html {
         letter-spacing: 0.25em;
         text-transform: uppercase;
         color: #e6e6e6;
+        display: inline-block;
+        cursor: default;
+        transition: all 0.4s ease;
+    }
+
+    footer div strong:hover {
+        color: #e2e8f0;
+        text-shadow: 0 0 20px rgba(226, 232, 240, 0.5);
+        transform: scale(1.05);
     }
 
     footer p {
@@ -1257,6 +1271,7 @@ html {
         color: #777;
         font-size: 0.9rem;
         letter-spacing: 0.08em;
+        transition: color 0.3s ease;
     }
 
     footer p:first-of-type {
@@ -1270,6 +1285,10 @@ html {
         color: #707070;
         text-transform: uppercase;
         letter-spacing: 0.15em;
+    }
+
+    footer p:hover {
+        color: #ccc;
     }
 
     .css-radio {
@@ -1669,11 +1688,17 @@ html {
 }
 
 #gt {
-
     margin: 0;
     background: #141414;
     color: white;
     font-family: "Segoe UI", Arial, sans-serif;
+    box-sizing: border-box;
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
 
     .top {
         position: relative;
@@ -1681,7 +1706,6 @@ html {
         background: url('images/AMG_GT.webp') center/cover no-repeat;
         display: flex;
         flex-direction: column;
-        overflow: hidden;
     }
 
     .top::before {
@@ -1697,22 +1721,17 @@ html {
         z-index: 1;
     }
 
-    nav,
-    .bevezeto {
-        position: relative;
-        z-index: 2;
-    }
-
     nav {
         position: sticky;
         top: 0;
+        z-index: 100;
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
         gap: 1rem;
         padding: 1rem 5vw;
-        background: rgba(10, 10, 10, 0.72);
+        background: rgba(10, 10, 10, 0.80);
         backdrop-filter: blur(12px);
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
@@ -1729,7 +1748,7 @@ html {
         width: 30px;
         height: 21px;
         cursor: pointer;
-        z-index: 100;
+        z-index: 101;
     }
 
     .hamburger span {
@@ -1795,6 +1814,8 @@ html {
     }
 
     .bevezeto {
+        position: relative;
+        z-index: 2;
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -1925,7 +1946,6 @@ html {
         width: 52px;
         height: 52px;
         border-radius: 50%;
-        border: 1px solid rgba(34, 166, 151, 0.12);
         color: #145D54;
         font-size: 0.95rem;
         font-weight: 800;
@@ -2079,6 +2099,12 @@ html {
         pointer-events: auto;
     }
 
+    #mode-sport:checked~.mode-display .sport {
+        border-color: rgba(20, 93, 84, 0.5);
+        box-shadow: 0 0 30px rgba(20, 93, 84, 0.25);
+    }
+
+
     #mode-race:checked~.mode-display .race {
         border-color: rgba(220, 38, 38, 0.5);
         box-shadow: 0 0 30px rgba(220, 38, 38, 0.25);
@@ -2139,8 +2165,6 @@ html {
         stroke-dashoffset: 264;
         animation: fillProgress 2s ease-out forwards;
     }
-
-
 
     .stat-value {
         position: absolute;
@@ -2206,7 +2230,7 @@ html {
         background: #050505;
         padding: 60px 20px 40px;
         text-align: center;
-        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
         position: relative;
         display: flex;
         flex-direction: column;
@@ -2221,10 +2245,16 @@ html {
         top: 0;
         left: 50%;
         transform: translateX(-50%);
-        width: 180px;
+        width: 150px;
         height: 2px;
         background: linear-gradient(90deg, transparent, #145D54, transparent);
-        opacity: 0.6;
+        transition: width 0.5s ease, opacity 0.5s ease;
+        opacity: 0.5;
+    }
+
+    footer:hover::before {
+        width: 300px;
+        opacity: 1;
     }
 
     footer div strong {
@@ -2232,6 +2262,15 @@ html {
         letter-spacing: 0.25em;
         text-transform: uppercase;
         color: #e6e6e6;
+        display: inline-block;
+        cursor: default;
+        transition: all 0.4s ease;
+    }
+
+    footer div strong:hover {
+        color: #145D54;
+        text-shadow: 0 0 20px rgba(20, 93, 84, 0.5);
+        transform: scale(1.05);
     }
 
     footer p {
@@ -2239,6 +2278,7 @@ html {
         color: #777;
         font-size: 0.9rem;
         letter-spacing: 0.08em;
+        transition: color 0.3s ease;
     }
 
     footer p:first-of-type {
@@ -2253,6 +2293,11 @@ html {
         text-transform: uppercase;
         letter-spacing: 0.15em;
     }
+
+    footer p:hover {
+        color: #ccc;
+    }
+
 
     @media (min-width: 769px) {
         .navbar a::after {
@@ -2285,7 +2330,7 @@ html {
     @media (max-width: 768px) {
         .hamburger {
             display: flex;
-            z-index: 1001;
+            z-index: 101;
         }
 
         .navbar {
@@ -2302,12 +2347,10 @@ html {
             box-shadow: none !important;
             visibility: hidden;
             transition: max-height 0.4s ease, padding 0.4s ease, visibility 0.4s ease;
-            background: rgba(10, 10, 10, 0.96);
-            backdrop-filter: blur(12px);
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-            z-index: 1000;
+            background: rgba(10, 10, 10, 0.80);
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            z-index: 100;
         }
 
         .navbar li {
@@ -2315,14 +2358,19 @@ html {
             text-align: center;
             display: flex;
             justify-content: center;
-            border: 1px solid rgba(240, 195, 109, 0.25);
+            border: 1px solid rgba(20, 93, 84, 0.5);
             border-radius: 999px;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
+            transition: border-color 0.3s ease;
+        }
+
+        .navbar li:hover {
+            border-color: rgba(96, 165, 250, 0.8);
         }
 
         .navbar a {
             display: inline-block;
-            padding: 15px 0;
+            padding: 12px 0;
             font-size: 1rem;
             text-align: center;
             width: 100%;
@@ -2330,8 +2378,10 @@ html {
 
         .menu-checkbox:checked~.navbar {
             max-height: 400px !important;
-            padding: 10px 15px 20px 15px !important;
+            padding: 15px 20px 20px 20px !important;
             visibility: visible;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+            border-bottom: 1px solid rgba(37, 99, 235, 0.3) !important;
         }
 
         .menu-checkbox:checked~.hamburger span:nth-child(1) {
@@ -2356,12 +2406,18 @@ html {
     }
 }
 
-
 #gle {
     margin: 0;
     background: #0b0f14;
     color: #e2e8f0;
     font-family: "Segoe UI", Arial, sans-serif;
+    box-sizing: border-box;
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
 
     .hero-header {
         position: relative;
@@ -2369,7 +2425,6 @@ html {
         background: url('images/gle-hatter.jpg') center/cover no-repeat;
         display: flex;
         flex-direction: column;
-        overflow: hidden;
     }
 
     .hero-header::before {
@@ -2383,22 +2438,17 @@ html {
         z-index: 1;
     }
 
-    .main-nav,
-    .hero-content {
-        position: relative;
-        z-index: 2;
-    }
-
     .main-nav {
         position: sticky;
         top: 0;
+        z-index: 100;
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
         gap: 1rem;
         padding: 1rem 5vw;
-        background: rgba(11, 15, 20, 0.75);
+        background: rgba(11, 15, 20, 0.85);
         backdrop-filter: blur(12px);
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
@@ -2440,7 +2490,7 @@ html {
         width: 30px;
         height: 21px;
         cursor: pointer;
-        z-index: 100;
+        z-index: 101;
     }
 
     .hamburger span {
@@ -2483,6 +2533,8 @@ html {
     }
 
     .hero-content {
+        position: relative;
+        z-index: 2;
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -2838,31 +2890,78 @@ html {
         font-weight: 600;
     }
 
-    .main-footer {
-        background: #06090c;
-        padding: 50px 5vw;
-        border-top: 1px solid rgba(255, 255, 255, 0.08);
+    footer {
+        background: #050505;
+        padding: 60px 20px 40px;
         text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        overflow: hidden;
     }
 
-    .footer-brand strong {
-        font-size: 1.2rem;
-        letter-spacing: 0.15em;
-        color: #fff;
+    footer::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #3b82f6, transparent);
+        transition: width 0.5s ease, opacity 0.5s ease;
+        opacity: 0.5;
     }
 
-    .footer-brand p {
-        color: #64748b;
-        font-size: 0.9rem;
-        margin: 8px 0 25px 0;
+    footer:hover::before {
+        width: 300px;
+        opacity: 1;
     }
 
-    .footer-bottom {
-        font-size: 0.75rem;
-        color: #475569;
+    footer div strong {
+        font-size: clamp(1.2rem, 2vw, 1.5rem);
+        letter-spacing: 0.25em;
         text-transform: uppercase;
-        letter-spacing: 0.1em;
+        color: #e6e6e6;
+        display: inline-block;
+        cursor: default;
+        transition: all 0.4s ease;
     }
+
+    footer div strong:hover {
+        color: #3b82f6;
+        text-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+        transform: scale(1.05);
+    }
+
+    footer p {
+        margin: 0;
+        color: #777;
+        font-size: 0.9rem;
+        letter-spacing: 0.08em;
+        transition: color 0.3s ease;
+    }
+
+    footer p:first-of-type {
+        font-style: italic;
+        color: #999;
+    }
+
+    footer p:last-child {
+        font-size: 0.75rem;
+        margin-top: 25px;
+        color: #707070;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+    }
+
+    footer p:hover {
+        color: #ccc;
+    }
+
 
     @media (min-width: 851px) {
         .nav-links a::after {
@@ -2895,8 +2994,9 @@ html {
     @media (max-width: 850px) {
         .hamburger {
             display: flex;
-            z-index: 1001;
+            z-index: 101;
         }
+
 
         .nav-links {
             position: absolute;
@@ -2913,11 +3013,10 @@ html {
             visibility: hidden;
             transition: max-height 0.4s ease, padding 0.4s ease, visibility 0.4s ease;
             background: rgba(11, 15, 20, 0.96);
-            backdrop-filter: blur(12px);
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-            z-index: 1000;
+            backdrop-filter: blur(16px);
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+            z-index: 100;
         }
 
         .nav-links li {
@@ -2927,21 +3026,23 @@ html {
             justify-content: center;
             border: 1px solid rgba(59, 130, 246, 0.25);
             border-radius: 999px;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
         }
 
         .nav-links a {
             display: inline-block;
-            padding: 15px 0;
-            font-size: 1rem;
+            padding: 12px 0;
+            font-size: 0.95rem;
             text-align: center;
             width: 100%;
         }
 
         .menu-checkbox:checked~.nav-links {
             max-height: 400px !important;
-            padding: 10px 15px 20px 15px !important;
+            padding: 15px 20px 20px 20px !important;
             visibility: visible;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
         }
 
         .menu-checkbox:checked~.hamburger span:nth-child(1) {
